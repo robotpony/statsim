@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { ListService } from './list';
+import { ListService } from './list.js';
+import { runCommand } from './run.js';
+import './agents/index.js'; // Register agents
 
 const program = new Command();
 
@@ -19,10 +21,10 @@ program
   });
 
 program
-  .command('run <name>')
-  .description('Run the named model')
-  .action((name: string) => {
-    console.log(`run command called with: ${name}`);
+  .command('run <game> <agents...>')
+  .description('Run the named game with given agents')
+  .action((game: string, agents: string[]) => {
+    runCommand([game, ...agents]);
   });
 
 program

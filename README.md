@@ -10,10 +10,8 @@ Usage:
 
 Available Commands:
   show        Show results from latest (or named) run
-  run         Run the named model
-  stop        Stop a running simulation
+  run         Run the named game with given parameters
   list        List simulations
-  ps          List  simulation progress
   help        Help about any command
 
 Flags:
@@ -25,6 +23,8 @@ Use "statsim [command] --help" for more information about a command.
 
 ## List simulations
 
+See the avaialble games, previous runs, and agents.
+
 ```
 ./statsim list
 
@@ -33,7 +33,7 @@ Available games:
     dice-1000-10000
 
 Available runs:
- ⎿ golf-4x (scenario 1)
+ ⎿ golf-4x-00105235351 (scenario 1)
 
 Available agents:
  ⎿ random
@@ -41,23 +41,20 @@ Available agents:
     example-agent
 ```
 
-
 ## Running a simulation
 
+Run a simulation for a game with a set of players. A name is generated automatically, and the simulation results are printed to the console.
+
 ```
-./statsim run golf-4
-Running 1,234 "golf-4" games with 3 players............................
+./statsim run dice-1000-10000 random random random
+Running dice-1000-10000 with 3 players (random, random, random) .......
 .......................................................................
 .......................................................................
 .......................................................................
 ......................................................DONE
 
-
-P1 - rando    45
-P2 - iocane   87
-P3 - mirror   1102
+Score:
+  P1 - random     45
+  P2 - random     87
+  P3 - random     1102
 ```
-
-## Adding a game
-
-## Adding a scenario
