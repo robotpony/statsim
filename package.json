@@ -14,7 +14,13 @@
   "author": "",
   "type": "commonjs",
   "main": "index.js",
+  "bin": {
+    "statsim": "./bin/statsim"
+  },
   "scripts": {
     "test": "test.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
   }
 }
