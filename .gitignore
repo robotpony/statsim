@@ -39,3 +39,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+bin/cli.d.ts.map
+bin/list.d.ts.map
+package-lock.json
