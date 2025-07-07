@@ -1,6 +1,6 @@
 # statsim
 
-Run a game simulation
+Run a game simulation. This is a WIP project to learn claude.ai tooling.
 
 ```
 ./statsim list
