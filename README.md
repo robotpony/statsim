@@ -24,6 +24,7 @@ Use "statsim [command] --help" for more information about a command.
 ```
 
 ## List simulations
+
 ```
 ./statsim list
 
@@ -31,12 +32,13 @@ Available games:
  ⎿ golf-4x
     dice-1000-10000
 
-Available results:
+Available runs:
  ⎿ golf-4x (scenario 1)
 
-Available agents
+Available agents:
  ⎿ random
     low-card
+    example-agent
 ```
 
 

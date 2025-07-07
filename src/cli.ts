@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import { ListService } from './list';
 
 const program = new Command();
 
@@ -13,7 +14,8 @@ program
   .command('list')
   .description('List simulations')
   .action(() => {
-    console.log('list command called');
+    const listService = new ListService();
+    console.log(listService.formatList());
   });
 
 program
