@@ -14,11 +14,11 @@ This is a simulation runner called `statsim` that executes game simulations with
 4. Then, begin working on the TODO items, marking them off as you go.
 5. For every step, give an explanation of the changes made in a 1-2 line summary.
 6. Make every task and code change as simple as possible. Every change should impact as little code as possible. Everything is about functional, clear, and simple code.
-7. Finally, add a review section to the `TODO.md` file with a summary of the changes you made and any other relavent information.
+7. Finally, add a review section to the `TODO.md` file with a summary of the changes you made and any other relavent information. 
 
 ## Architecture
 
-- **Project Structure**: Currently minimal with empty `src/` and `bin/` directories
+- **Project Structure**: `src/` contains all project components and `bin/` contains all runnable files.
 - **Configuration**: Basic Node.js project with package-lock.json but no package.json
 - **Documentation**: README.md contains usage examples and command structure
 
